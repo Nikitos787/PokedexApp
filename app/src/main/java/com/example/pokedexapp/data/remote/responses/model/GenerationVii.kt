@@ -1,6 +1,9 @@
 package com.example.pokedexapp.data.remote.responses.model
 
+import com.google.gson.annotations.SerializedName
+
 data class GenerationVii(
-    val icons: com.example.pokedexapp.data.remote.responses.model.Icons,
-    val ultra-sun-ultra-moon: com.example.pokedexapp.data.remote.responses.model.UltraSunUltraMoon
+    val icons: Icons,
+    @SerializedName("ultra-sun-ultra-moon")
+    val ultra_sun_ultra_moon: UltraSunUltraMoon
 )

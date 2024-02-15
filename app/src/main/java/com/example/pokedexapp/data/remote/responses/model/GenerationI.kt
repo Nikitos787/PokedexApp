@@ -1,6 +1,9 @@
 package com.example.pokedexapp.data.remote.responses.model
 
+import com.google.gson.annotations.SerializedName
+
 data class GenerationI(
-    val red-blue: com.example.pokedexapp.data.remote.responses.model.RedBlue,
-    val yellow: com.example.pokedexapp.data.remote.responses.model.Yellow
+    @SerializedName("red-blue")
+    val red_blue: RedBlue,
+    val yellow: Yellow
 )

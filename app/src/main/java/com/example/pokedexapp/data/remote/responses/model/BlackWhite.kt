@@ -1,7 +1,7 @@
 package com.example.pokedexapp.data.remote.responses.model
 
 data class BlackWhite(
-    val animated: com.example.pokedexapp.data.remote.responses.model.Animated,
+    val animated: Animated,
     val back_default: String,
     val back_female: Any,
     val back_shiny: String,

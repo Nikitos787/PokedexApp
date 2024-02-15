@@ -1,6 +1,10 @@
 package com.example.pokedexapp.data.remote.responses.model
 
+import com.google.gson.annotations.SerializedName
+
 data class GenerationVi(
-    val omegaruby-alphasapphire: com.example.pokedexapp.data.remote.responses.model.OmegarubyAlphasapphire,
-    val x-y: com.example.pokedexapp.data.remote.responses.model.XY
+    @SerializedName("omegaruby-alphasapphire")
+    val omegaruby_alphasapphire: OmegarubyAlphasapphire,
+    @SerializedName("x-y")
+    val x_y: XY
 )

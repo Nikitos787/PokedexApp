@@ -9,6 +9,6 @@ data class Sprites(
     val front_female: Any,
     val front_shiny: String,
     val front_shiny_female: Any,
-    val other: com.example.pokedexapp.data.remote.responses.model.Other,
-    val versions: com.example.pokedexapp.data.remote.responses.model.Versions
+    val other: Other,
+    val versions: Versions
 )

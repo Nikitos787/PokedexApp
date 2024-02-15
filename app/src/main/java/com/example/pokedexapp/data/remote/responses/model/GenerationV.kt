@@ -1,5 +1,8 @@
 package com.example.pokedexapp.data.remote.responses.model
 
+import com.google.gson.annotations.SerializedName
+
 data class GenerationV(
-    val black-white: com.example.pokedexapp.data.remote.responses.model.BlackWhite
+    @SerializedName("black-white")
+    val black_white: BlackWhite
 )
