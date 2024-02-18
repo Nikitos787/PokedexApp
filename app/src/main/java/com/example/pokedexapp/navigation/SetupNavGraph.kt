@@ -9,6 +9,8 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
 import com.example.pokedexapp.pokemonList.PokemonListScreen
+import com.example.pokedexapp.pokemondetails.PokemonDetailsScreen
+import java.util.Locale
 
 @Composable
 fun SetupNavGraph(navController: NavHostController) {
@@ -32,6 +34,11 @@ fun SetupNavGraph(navController: NavHostController) {
             val pokemonName = remember {
                 it.arguments?.getString("pokemonName")
             }
+            PokemonDetailsScreen(
+                navHostController = navController,
+                dominantColor = dominantColor,
+                pokemonName = pokemonName?.lowercase(Locale.ROOT) ?: ""
+            )
         }
     }
 }
